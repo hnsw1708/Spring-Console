@@ -15,7 +15,7 @@ public class Runner implements CommandLineRunner {
         logger.info("EXECUTING : Command Line Runner");
         for (int i = 0; i < 100; i++) {
             longTask();
-            logger.info("Hello || Console Runner || {}", String.format("%02d", i));
+            logger.info("Hello || Console Runner || {}", "%02d".formatted(i));
         }
     }
 
